@@ -12,14 +12,25 @@ class App extends Component {
     }
 
     componentDidMount() {
-        // Fetch movie data from the API
+        /* To get the data, we use the fetch method - the first argument is the API
+        * endpoint URL; the second argument is an object in which we specify the method
+        * and the headers, which is an object containing the authorisation token number
+        * that we assigned to the user in the Django API when the user was created */
+        fetch('http://127.0.0.1:8000/api/movies/', {
+            method: 'GET',
+            headers: {
+                // We pass this in statically for now
+                'Authorization': 'Token 2235df53cb3910ac39bce23b5a17a29280afa4ae'
+            }
+        }).then(res => console.log(res))
+            .catch(error => console.log(error))
     }
 
     render() {
         return (
             <div className="App">
                 <h1>Movie Rater</h1>
-                <MovieList movies={this.state.movies} />
+                <MovieList movies={this.state.movies}/>
             </div>
         );
     }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d826627a-2277-4945-89dc-afa24aa9de14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/movie-list.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
@@ -60,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584724380756</updated>
       <workItem from="1584724384000" duration="455000" />
-      <workItem from="1584781582335" duration="2858000" />
+      <workItem from="1584781582335" duration="4623000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -69,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584782825533</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created basic MovieList component to map over and render API information">
+      <created>1584784693333</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584784693333</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,17 +83,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Amended files for basic project setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Amended files for basic project setup" />
+    <MESSAGE value="Created basic MovieList component to map over and render API information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created basic MovieList component to map over and render API information" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1584782822089">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1584784690498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584782822089" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584784690498" />
     <state x="543" y="257" key="Github.ShareDialog" timestamp="1584781836001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
