@@ -29,12 +29,18 @@ class App extends Component {
             .catch(error => console.log(error))
     }
 
+    // This function gets the movie from the MovieList component and
+    // sets the state of the selectedMovie prop to the movie
+    movieClicked = movie => {
+        this.setState({'selectedMovie': movie})
+    };
+
     render() {
         return (
             <div className="App">
                 <h1>Movie Rater</h1>
                 <div className="layout">
-                    <MovieList movies={this.state.movies}/>
+                    <MovieList movies={this.state.movies} movieClicked={this.movieClicked}/>
                     <MovieDetails movie={this.state.selectedMovie} />
                 </div>
             </div>
