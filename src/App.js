@@ -7,7 +7,7 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            'movies': ['Titanic', 'Avatar']
+            'movies': []
         }
     }
 
@@ -22,7 +22,8 @@ class App extends Component {
                 // We pass this in statically for now
                 'Authorization': 'Token 2235df53cb3910ac39bce23b5a17a29280afa4ae'
             }
-        }).then(res => console.log(res))
+        }).then(res => res.json())
+            .then(res => this.setState({'movies': res}))
             .catch(error => console.log(error))
     }
 

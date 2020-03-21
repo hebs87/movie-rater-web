@@ -4,6 +4,7 @@
     <list default="true" id="d826627a-2277-4945-89dc-afa24aa9de14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,9 @@
       <option name="presentableId" value="Default" />
       <updated>1584724380756</updated>
       <workItem from="1584724384000" duration="455000" />
-      <workItem from="1584781582335" duration="4623000" />
+      <workItem from="1584781582335" duration="4715000" />
+      <workItem from="1584796199951" duration="73000" />
+      <workItem from="1584827934755" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -75,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584784693333</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Amended componentDidMount method in App.js to fetch API data and console log it">
+      <created>1584788633937</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584788633937</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,44 +94,45 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Amended files for basic project setup" />
     <MESSAGE value="Created basic MovieList component to map over and render API information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created basic MovieList component to map over and render API information" />
+    <MESSAGE value="Amended componentDidMount method in App.js to fetch API data and console log it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended componentDidMount method in App.js to fetch API data and console log it" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1584784690498">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1584788629494">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584784690498" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584788629494" />
     <state x="543" y="257" key="Github.ShareDialog" timestamp="1584781836001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="543" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1584781836001" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1584781660861">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1584828694040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584781660861" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1584781660861">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584828694040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1584828694040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584781660861" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1584781660861">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584828694040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1584828694040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584781660861" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1584781660861">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584828694040" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1584828694040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584781660861" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584828694040" />
     <state x="530" y="281" key="VCS.ChangelistChooser" timestamp="1584782869181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="281" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1584782869181" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584782828764">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584788638234">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584782828764" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584788638234" />
   </component>
 </project>
