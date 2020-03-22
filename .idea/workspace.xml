@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d826627a-2277-4945-89dc-afa24aa9de14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/movie-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
       <workItem from="1584724384000" duration="455000" />
       <workItem from="1584781582335" duration="4715000" />
       <workItem from="1584796199951" duration="73000" />
-      <workItem from="1584827934755" duration="15800000" />
+      <workItem from="1584827934755" duration="16935000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -127,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584896352742</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added functionality to delete movie and re-render Movie list with new list">
+      <created>1584902081870</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584902081870</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,17 +150,18 @@
     <MESSAGE value="Added FontAwesome link, rendered stars and conditionally added className with color depending on avg_rating value" />
     <MESSAGE value="Added functionality to rate movie, pass data to backend API to process rating value, and re-render component with new movie details" />
     <MESSAGE value="Moved part of the URL to .env file and set as environment variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved part of the URL to .env file and set as environment variable" />
+    <MESSAGE value="Added functionality to delete movie and re-render Movie list with new list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to delete movie and re-render Movie list with new list" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1584896349804">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1584902079801">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584896349804" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584902079801" />
     <state x="543" y="257" key="Github.ShareDialog" timestamp="1584781836001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -182,9 +190,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="281" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1584782869181" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584896354818">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584902085391">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584896354818" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584902085391" />
   </component>
 </project>

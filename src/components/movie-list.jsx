@@ -33,7 +33,7 @@ const MovieList = props => {
     return (
         <div>
             {props.movies.map(movie => (
-                <div key={movie.id}>
+                <div key={movie.id} className="movie-item">
                     <h3 onClick={movieClicked(movie)}>
                         {movie.title}
                     </h3>
