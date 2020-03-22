@@ -31,7 +31,7 @@ class MovieDetails extends Component {
         * movie IDs are already set so we don't need to pass these in)
         * 3) When we get the success response back, we then call the getDetails function
         * which gets the movie's detials again and refreshes the page with the new details */
-        fetch(`http://127.0.0.1:8000/api/movies/${this.props.movie.id}/rate_movie/`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/movies/${this.props.movie.id}/rate_movie/`, {
             method: 'POST',
             headers: {
                 // Whenever we do a POST or PUT, we need to set a Content-Type (JSON in this instance)
@@ -55,7 +55,7 @@ class MovieDetails extends Component {
         * which is in the App component that gets the movie details from the MovieList
         * component - so basically, we pass the movie data out of this component to
         * then trigger it to re-render with the new details */
-        fetch(`http://127.0.0.1:8000/api/movies/${this.props.movie.id}/`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/movies/${this.props.movie.id}/`, {
             method: 'GET',
             headers: {
                 // Whenever we do a POST or PUT, we need to set a Content-Type (JSON in this instance)
