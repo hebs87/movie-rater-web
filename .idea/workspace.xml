@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d826627a-2277-4945-89dc-afa24aa9de14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/movie-details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-details.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <workItem from="1584724384000" duration="455000" />
       <workItem from="1584781582335" duration="4715000" />
       <workItem from="1584796199951" duration="73000" />
-      <workItem from="1584827934755" duration="6906000" />
+      <workItem from="1584827934755" duration="12425000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -109,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584833196466</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added FontAwesome link, rendered stars and conditionally added className with color depending on avg_rating value">
+      <created>1584835472962</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584835472962</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,17 +127,18 @@
     <MESSAGE value="Amended componentDidMount method in App.js to convert fetch response promise to JSON and set this as the state value. Also amended MovieList component to display the state data" />
     <MESSAGE value="Created MovieDetails component and conditionally rendered data depending on its prop value" />
     <MESSAGE value="Created functionality to pass movie data between MovieList component into the App component and then into the MovieList component to render relevant movie data on click" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created functionality to pass movie data between MovieList component into the App component and then into the MovieList component to render relevant movie data on click" />
+    <MESSAGE value="Added FontAwesome link, rendered stars and conditionally added className with color depending on avg_rating value" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added FontAwesome link, rendered stars and conditionally added className with color depending on avg_rating value" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1584833193248">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1584835468479">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584833193248" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584835468479" />
     <state x="543" y="257" key="Github.ShareDialog" timestamp="1584781836001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
