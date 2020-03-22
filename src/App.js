@@ -35,13 +35,35 @@ class App extends Component {
         this.setState({'selectedMovie': movie})
     };
 
+    // This function gets the deleted movie from the MovieList component,
+    // filters the movie list and removes the delete movie from it, then
+    // sets the state of the selectedMovie prop to null so it is removed
+    // and also the value of the movies prop to the new list
+    movieDeleted = selMovie => {
+        // New list of movies
+        const movies = this.state.movies.filter(
+            // If the movie is not equal to the selected movie ID, then
+            // we will leave it (returns True); if it is equal (returns
+            // False) then it will be removed from the list
+            movie => movie.id !== selMovie.id
+        );
+        this.setState({movies, selectedMovie: null})
+    };
+
     render() {
         return (
             <div className="App">
                 <h1>Movie Rater</h1>
                 <div className="layout">
-                    <MovieList movies={this.state.movies} movieClicked={this.movieClicked}/>
-                    <MovieDetails movie={this.state.selectedMovie} updateMovie={this.movieClicked} />
+                    <MovieList
+                        movies={this.state.movies}
+                        movieClicked={this.movieClicked}
+                        movieDeleted={this.movieDeleted}
+                    />
+                    <MovieDetails
+                        movie={this.state.selectedMovie}
+                        updateMovie={this.movieClicked}
+                    />
                 </div>
             </div>
         );
