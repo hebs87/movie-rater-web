@@ -63,6 +63,14 @@ class App extends Component {
         this.setState({'editedMovie': selMovie});
     };
 
+    // This function gets the new movie details from the MovieForm component,
+    // and sets the state of the editedMovie prop to those details
+    newMovie = () => {
+        this.setState({'editedMovie': {
+            'title': '', 'description': ''
+        }})
+    };
+
     render() {
         return (
             <div className="App">
@@ -73,6 +81,7 @@ class App extends Component {
                         movieClicked={this.movieClicked}
                         movieDeleted={this.movieDeleted}
                         editClicked={this.editClicked}
+                        newMovie={this.newMovie}
                     />
                     <div>
                         {!this.state.editedMovie ?

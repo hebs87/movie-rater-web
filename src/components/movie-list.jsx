@@ -36,6 +36,13 @@ const MovieList = props => {
             .catch(error => console.log(error))
     };
 
+    // A function that calls the newMovie() function from the App.js file,
+    // which then sets the editedMovie state to the title and description
+    // values of the form, enabling the creation of a new movie in the DB
+    const newMovie = () => {
+        props.newMovie();
+    };
+
     return (
         <div>
             {props.movies.map(movie => (
@@ -53,6 +60,7 @@ const MovieList = props => {
                     />
                 </div>
             ))}
+            <button onClick={newMovie}>Add Movie</button>
         </div>
     )
 };
