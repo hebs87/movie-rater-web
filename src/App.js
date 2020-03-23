@@ -63,8 +63,9 @@ class App extends Component {
         this.setState({'editedMovie': selMovie});
     };
 
-    // This function gets the new movie details from the MovieForm component,
-    // and sets the state of the editedMovie prop to those details
+    // This function sets the MovieForm fields to blank by setting the
+    // state of the editedMovie prop to those details. It enables us to get
+    // a blank form when clicking the Add Movie button in the MovieList
     newMovie = () => {
         this.setState({'editedMovie': {
             'title': '', 'description': ''
