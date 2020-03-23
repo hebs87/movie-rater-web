@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import MovieList from "./components/movie-list";
 import MovieDetails from "./components/movie-details";
+import MovieForm from "./components/movie-form";
 
 class App extends Component {
 
@@ -9,7 +10,8 @@ class App extends Component {
         super(props);
         this.state = {
             'movies': [],
-            'selectedMovie': null
+            'selectedMovie': null,
+            'editedMovie': null
         }
     }
 
@@ -30,9 +32,14 @@ class App extends Component {
     }
 
     // This function gets the movie from the MovieList component and
-    // sets the state of the selectedMovie prop to the movie
+    // sets the state of the selectedMovie prop to the movie. It also
+    // sets the state of the editedMovie to null to enable us to toggle
+    // between the movie details and the edit form
     movieClicked = movie => {
-        this.setState({'selectedMovie': movie})
+        this.setState({
+            'selectedMovie': movie,
+            'editedMovie': null
+        });
     };
 
     // This function gets the deleted movie from the MovieList component,
@@ -50,6 +57,12 @@ class App extends Component {
         this.setState({movies, selectedMovie: null})
     };
 
+    // This function gets the edited movie from the MovieList component,
+    // and sets the state of the editedMovie prop to the movie
+    editClicked = selMovie => {
+        this.setState({'editedMovie': selMovie});
+    };
+
     render() {
         return (
             <div className="App">
@@ -59,11 +72,20 @@ class App extends Component {
                         movies={this.state.movies}
                         movieClicked={this.movieClicked}
                         movieDeleted={this.movieDeleted}
+                        editClicked={this.editClicked}
                     />
-                    <MovieDetails
-                        movie={this.state.selectedMovie}
-                        updateMovie={this.movieClicked}
-                    />
+                    <div>
+                        {!this.state.editedMovie ?
+                            <MovieDetails
+                                movie={this.state.selectedMovie}
+                                updateMovie={this.movieClicked}
+                            />
+                            :
+                            < MovieForm
+                                movie={this.state.editedMovie}
+                            />
+                        }
+                    </div>
                 </div>
             </div>
         );

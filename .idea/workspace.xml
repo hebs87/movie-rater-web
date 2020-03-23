@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d826627a-2277-4945-89dc-afa24aa9de14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/movie-form.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/movie-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +63,8 @@
       <workItem from="1584724384000" duration="455000" />
       <workItem from="1584781582335" duration="4715000" />
       <workItem from="1584796199951" duration="73000" />
-      <workItem from="1584827934755" duration="16935000" />
+      <workItem from="1584827934755" duration="17017000" />
+      <workItem from="1585002358263" duration="2032000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -134,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584902081870</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added some custom styles to edit and delete icons">
+      <created>1584914864154</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584914864154</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,37 +160,42 @@
     <MESSAGE value="Added functionality to rate movie, pass data to backend API to process rating value, and re-render component with new movie details" />
     <MESSAGE value="Moved part of the URL to .env file and set as environment variable" />
     <MESSAGE value="Added functionality to delete movie and re-render Movie list with new list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to delete movie and re-render Movie list with new list" />
+    <MESSAGE value="Added some custom styles to edit and delete icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some custom styles to edit and delete icons" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1584902079801">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1584914860093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584902079801" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584914860093" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1585003629675">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1585003629675" />
     <state x="543" y="257" key="Github.ShareDialog" timestamp="1584781836001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="543" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1584781836001" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1584902045558">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1585002438964">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584902045558" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1584902045558">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585002438964" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1585002438963">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584902045558" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1584902045558">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585002438963" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1585002438962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584902045558" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1584902045558">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585002438962" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1585002438964">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584902045558" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585002438964" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1584833943444">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -190,9 +204,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="281" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1584782869181" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584902085391">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1584914866186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584902085391" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584914866186" />
   </component>
 </project>

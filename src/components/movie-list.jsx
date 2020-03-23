@@ -4,10 +4,16 @@ let FontAwesome = require('react-fontawesome');
 
 const MovieList = props => {
     // A double arrow function that first gets the movie, then the event,
-    // which is the onClick in the h3 element. It the gets the movieClicked
+    // which is the onClick in the h3 element. It gets the movieClicked
     // prop from the App component and passes in the movie
     const movieClicked = movie => evt => {
         props.movieClicked(movie);
+    };
+
+    // This functions the gets the editClicked prop from the App component
+    // and passes in the movie
+    const editClicked = movie => evt => {
+        props.editClicked(movie);
     };
 
     // A double arrow function that first gets the movie, then the event,
@@ -39,6 +45,7 @@ const MovieList = props => {
                     </h3>
                     <FontAwesome
                         name="edit"
+                        onClick={editClicked(movie)}
                     />
                     <FontAwesome
                         name="trash"
