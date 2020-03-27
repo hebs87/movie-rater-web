@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d826627a-2277-4945-89dc-afa24aa9de14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/movie-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-form.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
       <workItem from="1584781582335" duration="4715000" />
       <workItem from="1584796199951" duration="73000" />
       <workItem from="1584827934755" duration="17017000" />
-      <workItem from="1585002358263" duration="10655000" />
+      <workItem from="1585002358263" duration="11786000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585346726169</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added functionality to save and update movies based on which form is completed, and added form validation">
+      <created>1585351099369</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585351099369</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,17 +199,18 @@
     <MESSAGE value="Created Add Movie button in MovieList component and added functionality to display MovieForm on click" />
     <MESSAGE value="Amended newMovie function comment in App.js" />
     <MESSAGE value="Added form fields and functionality to hide the form when cancelled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added form fields and functionality to hide the form when cancelled" />
+    <MESSAGE value="Added functionality to save and update movies based on which form is completed, and added form validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to save and update movies based on which form is completed, and added form validation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585346723624">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585352199438">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585346723624" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585352199438" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1585003629675">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
