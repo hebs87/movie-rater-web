@@ -4,6 +4,7 @@
     <list default="true" id="d826627a-2277-4945-89dc-afa24aa9de14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-form.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <workItem from="1584781582335" duration="4715000" />
       <workItem from="1584796199951" duration="73000" />
       <workItem from="1584827934755" duration="17017000" />
-      <workItem from="1585002358263" duration="3198000" />
+      <workItem from="1585002358263" duration="6334000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -155,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585005292448</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Amended newMovie function comment in App.js">
+      <created>1585005629835</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1585005629835</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,17 +183,18 @@
     <MESSAGE value="Added some custom styles to edit and delete icons" />
     <MESSAGE value="Created basic MovieForm component and conditionally rendered MovieDetails or MovieForm component based on editedMovie state" />
     <MESSAGE value="Created Add Movie button in MovieList component and added functionality to display MovieForm on click" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Add Movie button in MovieList component and added functionality to display MovieForm on click" />
+    <MESSAGE value="Amended newMovie function comment in App.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended newMovie function comment in App.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585005290278">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585005628278">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585005290278" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585005628278" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1585003629675">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -210,17 +219,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585002438964" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1584833943444">
+    <state x="184" y="6" key="SettingsEditor" timestamp="1585087815692">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584833943444" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585087815692" />
     <state x="530" y="281" key="VCS.ChangelistChooser" timestamp="1584782869181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="281" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1584782869181" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585005294655">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585005632129">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585005294655" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585005632129" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585346475595">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1585346475595" />
   </component>
 </project>

@@ -9,9 +9,9 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            'movies': [],
-            'selectedMovie': null,
-            'editedMovie': null
+            movies: [],
+            selectedMovie: null,
+            editedMovie: null
         }
     }
 
@@ -27,7 +27,7 @@ class App extends Component {
                 'Authorization': 'Token 2235df53cb3910ac39bce23b5a17a29280afa4ae'
             }
         }).then(res => res.json())
-            .then(res => this.setState({'movies': res}))
+            .then(res => this.setState({movies: res}))
             .catch(error => console.log(error))
     }
 
@@ -37,8 +37,8 @@ class App extends Component {
     // between the movie details and the edit form
     movieClicked = movie => {
         this.setState({
-            'selectedMovie': movie,
-            'editedMovie': null
+            selectedMovie: movie,
+            editedMovie: null
         });
     };
 
@@ -60,16 +60,23 @@ class App extends Component {
     // This function gets the edited movie from the MovieList component,
     // and sets the state of the editedMovie prop to the movie
     editClicked = selMovie => {
-        this.setState({'editedMovie': selMovie});
+        this.setState({editedMovie: selMovie});
     };
 
     // This function sets the MovieForm fields to blank by setting the
     // state of the editedMovie prop to those details. It enables us to get
     // a blank form when clicking the Add Movie button in the MovieList
     newMovie = () => {
-        this.setState({'editedMovie': {
+        this.setState({editedMovie: {
             'title': '', 'description': ''
         }})
+    };
+
+    // This function is passed into the MovieForm component
+    // in which it is called in another function that is called
+    // by the Cancel button's onClick attribute
+    cancelForm = () => {
+        this.setState({editedMovie: null})
     };
 
     render() {
@@ -93,6 +100,7 @@ class App extends Component {
                             :
                             < MovieForm
                                 movie={this.state.editedMovie}
+                                cancelForm={this.cancelForm}
                             />
                         }
                     </div>
