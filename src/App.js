@@ -79,6 +79,15 @@ class App extends Component {
         this.setState({editedMovie: null})
     };
 
+    // This function is passed into the MovieForm component
+    // in which it is called in another function when the movie
+    // form is saved. This function then sets the movies state
+    // by spreading in the existing movies object, and then adding
+    // the new movie to it
+    addMovie = movie => {
+        this.setState({movies: [...this.state.movies, movie]})
+    };
+
     render() {
         return (
             <div className="App">
@@ -101,6 +110,8 @@ class App extends Component {
                             < MovieForm
                                 movie={this.state.editedMovie}
                                 cancelForm={this.cancelForm}
+                                addMovie={this.addMovie}
+                                editedMovie={this.movieClicked}
                             />
                         }
                     </div>
