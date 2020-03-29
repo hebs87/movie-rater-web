@@ -63,7 +63,7 @@
       <workItem from="1584796199951" duration="73000" />
       <workItem from="1584827934755" duration="17017000" />
       <workItem from="1585002358263" duration="11831000" />
-      <workItem from="1585395546801" duration="7246000" />
+      <workItem from="1585395546801" duration="9309000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -212,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585477736438</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Amended Login component to only set the token if the user successfully logs in">
+      <created>1585477790889</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1585477790889</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,17 +247,18 @@
     <MESSAGE value="Added functionality to get token on successful user login" />
     <MESSAGE value="Amended login function in Login component to store token in cookies" />
     <MESSAGE value="Amended App component to get the token and dynamically use it in all fetch calls in all components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Amended App component to get the token and dynamically use it in all fetch calls in all components" />
+    <MESSAGE value="Amended Login component to only set the token if the user successfully logs in" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended Login component to only set the token if the user successfully logs in" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585477734244">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585477789394">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585477734244" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585477789394" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1585003629675">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -283,10 +291,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="281" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1584782869181" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585474255112">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585477792697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585474255112" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585477792697" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585347704230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
