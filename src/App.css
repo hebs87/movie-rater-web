@@ -84,3 +84,8 @@ h1 span.fa {
     transform: rotate(30deg);
     margin-right: 10px;
 }
+
+.login-container {
+    width: 50%;
+    margin: 50px 25%;
+}

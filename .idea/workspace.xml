@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d826627a-2277-4945-89dc-afa24aa9de14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
       <workItem from="1584796199951" duration="73000" />
       <workItem from="1584827934755" duration="17017000" />
       <workItem from="1585002358263" duration="11831000" />
-      <workItem from="1585395546801" duration="908000" />
+      <workItem from="1585395546801" duration="3730000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -187,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585352201691</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Created basic Login component and created routes for Login and App components in index.js">
+      <created>1585396533682</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585396533682</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,17 +216,18 @@
     <MESSAGE value="Added form fields and functionality to hide the form when cancelled" />
     <MESSAGE value="Added functionality to save and update movies based on which form is completed, and added form validation" />
     <MESSAGE value="Added styles and logo to application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added styles and logo to application" />
+    <MESSAGE value="Created basic Login component and created routes for Login and App components in index.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created basic Login component and created routes for Login and App components in index.js" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585352199438">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585396531101">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585352199438" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585396531101" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1585003629675">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -254,10 +260,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="281" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1584782869181" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585352204550">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585396536321">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585352204550" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585396536321" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585347704230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
