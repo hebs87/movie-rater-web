@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {withCookies} from 'react-cookie';
 import './App.css';
 import MovieList from "./components/movie-list";
 import MovieDetails from "./components/movie-details";
@@ -13,24 +14,34 @@ class App extends Component {
         this.state = {
             movies: [],
             selectedMovie: null,
-            editedMovie: null
+            editedMovie: null,
+            // This is the token that we get from the cookies when the
+            // user is logged in - it should be the same name that we
+            // set in the set() method in the Login component
+            token: this.props.cookies.get('token')
         }
     }
 
     componentDidMount() {
-        /* To get the data, we use the fetch method - the first argument is the API
-        * endpoint URL; the second argument is an object in which we specify the method
-        * and the headers, which is an object containing the authorisation token number
-        * that we assigned to the user in the Django API when the user was created */
-        fetch(`${process.env.REACT_APP_API_URL}/api/movies/`, {
-            method: 'GET',
-            headers: {
-                // We pass this in statically for now
-                'Authorization': 'Token 2235df53cb3910ac39bce23b5a17a29280afa4ae'
-            }
-        }).then(res => res.json())
-            .then(res => this.setState({movies: res}))
-            .catch(error => console.log(error))
+        // If the user is authenticated, we fetch the data using their token
+        if (this.state.token) {
+            /* To get the data, we use the fetch method - the first argument is the API
+            * endpoint URL; the second argument is an object in which we specify the method
+            * and the headers, which is an object containing the authorisation token number
+            * that we assigned to the user in the Django API when the user was created */
+            fetch(`${process.env.REACT_APP_API_URL}/api/movies/`, {
+                method: 'GET',
+                headers: {
+                    // We dynamically pass in the token from the cookie
+                    'Authorization': `Token ${this.state.token}`
+                }
+            }).then(res => res.json())
+                .then(res => this.setState({movies: res}))
+                .catch(error => console.log(error))
+        } else {
+            // Else, we redirect them to the login page
+            window.location.href = '/';
+        }
     }
 
     // This function gets the movie from the MovieList component and
@@ -104,12 +115,14 @@ class App extends Component {
                         movieDeleted={this.movieDeleted}
                         editClicked={this.editClicked}
                         newMovie={this.newMovie}
+                        token={this.state.token}
                     />
                     <div>
                         {!this.state.editedMovie ?
                             <MovieDetails
                                 movie={this.state.selectedMovie}
                                 updateMovie={this.movieClicked}
+                                token={this.state.token}
                             />
                             :
                             < MovieForm
@@ -117,6 +130,7 @@ class App extends Component {
                                 cancelForm={this.cancelForm}
                                 addMovie={this.addMovie}
                                 editedMovie={this.movieClicked}
+                                token={this.state.token}
                             />
                         }
                     </div>
@@ -126,4 +140,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default withCookies(App);

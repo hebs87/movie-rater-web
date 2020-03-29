@@ -36,8 +36,8 @@ class MovieDetails extends Component {
             headers: {
                 // Whenever we do a POST or PUT, we need to set a Content-Type (JSON in this instance)
                 'Content-Type': 'application/json',
-                // We pass this in statically for now
-                'Authorization': 'Token 2235df53cb3910ac39bce23b5a17a29280afa4ae'
+                // We dynamically pass in the token from the cookie
+                'Authorization': `Token ${this.props.token}`
             },
             body: JSON.stringify({
                 stars
@@ -60,8 +60,8 @@ class MovieDetails extends Component {
             headers: {
                 // Whenever we do a POST or PUT, we need to set a Content-Type (JSON in this instance)
                 'Content-Type': 'application/json',
-                // We pass this in statically for now
-                'Authorization': 'Token 2235df53cb3910ac39bce23b5a17a29280afa4ae'
+                // We dynamically pass in the token from the cookie
+                'Authorization': `Token ${this.props.token}`
             }
         }).then(res => res.json())
             .then(res => this.props.updateMovie(res))

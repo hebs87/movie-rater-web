@@ -27,10 +27,8 @@ const MovieList = props => {
         fetch(`${process.env.REACT_APP_API_URL}/api/movies/${movie.id}`, {
             method: 'DELETE',
             headers: {
-                // Whenever we do a POST or PUT, we need to set a Content-Type (JSON in this instance)
-                'Content-Type': 'application/json',
-                // We pass this in statically for now
-                'Authorization': 'Token 2235df53cb3910ac39bce23b5a17a29280afa4ae'
+                // We dynamically pass in the token from the cookie
+                'Authorization': `Token ${props.token}`
             },
         }).then(res => props.movieDeleted(movie))
             .catch(error => console.log(error))

@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d826627a-2277-4945-89dc-afa24aa9de14" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-details.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,7 @@
       <workItem from="1584796199951" duration="73000" />
       <workItem from="1584827934755" duration="17017000" />
       <workItem from="1585002358263" duration="11831000" />
-      <workItem from="1585395546801" duration="4952000" />
+      <workItem from="1585395546801" duration="7196000" />
     </task>
     <task id="LOCAL-00001" summary="Amended files for basic project setup">
       <created>1584782825533</created>
@@ -199,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585474252637</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Amended login function in Login component to store token in cookies">
+      <created>1585475467096</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585475467096</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,17 +234,18 @@
     <MESSAGE value="Added styles and logo to application" />
     <MESSAGE value="Created basic Login component and created routes for Login and App components in index.js" />
     <MESSAGE value="Added functionality to get token on successful user login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to get token on successful user login" />
+    <MESSAGE value="Amended login function in Login component to store token in cookies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended login function in Login component to store token in cookies" />
   </component>
   <component name="WindowStateProjectService">
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584782603055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584782603055" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585474250118">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1585475465464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585474250118" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585475465464" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1585003629675">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
