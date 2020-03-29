@@ -101,9 +101,22 @@ class App extends Component {
         this.setState({movies: [...this.state.movies, movie]})
     };
 
+    logout = () => {
+        this.setState({token: null});
+        this.props.cookies.remove('token');
+        window.location.href = '/';
+    };
+
     render() {
         return (
             <div className="App">
+                {
+                    this.state.token ? (
+                        <button onClick={this.logout}>
+                            Logout
+                        </button>
+                    ) : null
+                }
                 <h1>
                     <FontAwesome name="film"/>
                     <span>Movie Rater</span>
