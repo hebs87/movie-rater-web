@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {withCookies} from 'react-cookie';
 
 class Login extends Component {
     constructor(props) {
@@ -26,10 +27,12 @@ class Login extends Component {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(this.state.credentials)
         }).then(res => res.json())
-            // We console log the token and then redirect the user
-            // to the /movies route
+            // We use the cookies prop from the withCookies HOC and set it
+            // to the res.token - the first argument is the token name (can
+            // be whatever we want), and the second is the token from the
+            // res object. Then we redirect the user to the /movies route
             .then(res => {
-                console.log(res.token);
+                this.props.cookies.set('token', res.token);
                 window.location.href = '/movies'
             })
             .catch(error => console.log(error))
@@ -66,4 +69,4 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default withCookies(Login);
